@@ -1,5 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
+  background-image: url("./comingsoon.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  width: 100vw;
+  height: 100vh;
+}
+h1 {
+  padding-top: 2px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+h3 {
+  margin-bottom: 10px;
+}
+h4 {
+  margin-bottom: 10px;
+}
+
+.content {
+  display: flex;
+  /* align-items: center; */
+  margin-top: 150px;
+  justify-content: center;
+  padding-bottom: 7em;
+  padding-top: 2em;
+  width: 100%;
+  height: 100%;
+  margin-left: 80px;
+}
+
+.firstcontent {
   text-align: center;
+}
+
+.time {
+  border: 2px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  text-align: center;
+  margin-bottom: 80px;
 }
 
 .App-logo {
@@ -26,6 +73,13 @@
 
 .App-link {
   color: #61dafb;
+}
+@media screen and (max-width: 720px) {
+  .time {
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 2em 1em;
+  }
 }
 
 @keyframes App-logo-spin {
